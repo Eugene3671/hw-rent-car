@@ -1,0 +1,14 @@
+.header {
+  background: #f2f4f7;
+}
+.headerContainer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f2f4f7;
+}
+.navList {
+  display: flex;
+  gap: 32px;
+}
