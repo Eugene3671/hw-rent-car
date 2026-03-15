@@ -56,10 +56,10 @@
 
 ## 👤 Автор
 
-- **Ім'я:** [Твоє Ім'я]
-- **Роль:** Frontend Developer
-- **GitHub:** [@your-username](https://github.com/your-username)
-- **LinkedIn:** [Твій LinkedIn Профіль]
+- **Ім'я:** Eugene Korzh
+- **Роль:** Fullstack Developer
+- **GitHub:** [@Eugene3671](https://github.com/Eugene3671)
+- **LinkedIn:** [www.linkedin.com/in/eugene-korzh]
 
 ---
 
