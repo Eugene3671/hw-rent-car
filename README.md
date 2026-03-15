@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚗 Rental Car App
 
-## Getting Started
+Проєкт для пошуку та бронювання автомобілів. Користувачі можуть легко підібрати авто за допомогою гнучких фільтрів, переглянути детальні характеристики та залишити заявку на оренду.
 
-First, run the development server:
+---
+
+## 🌟 Основні функції
+
+- **Каталог автомобілів:** Відображення списку авто з використанням `Infinite Scroll` (пагінація через TanStack Query).
+- **Розширена фільтрація:** Пошук за брендом, ціною за годину та діапазоном пробігу.
+- **Детальна сторінка:** Повна інформація про авто, технічні характеристики та умови оренди.
+- **Форма бронювання:** Кастомна форма з вибором дати та валідацією.
+- **Обране (Favorites):** Збереження обраних автомобілів у локальному сховищі через Zustand.
+- **Responsive Design:** Повна адаптивність під мобільні пристрої та десктопи.
+
+---
+
+## 🛠 Технологічний стек
+
+- **Framework:** [Next.js](https://nextjs.org/) 14+ (App Router)
+- **State Management:** [Zustand](https://zustand-demo.pmnd.rs/)
+- **Data Fetching:** [TanStack Query v5](https://tanstack.com/query/latest)
+- **Styling:** CSS Modules
+- **Notifications:** [React Hot Toast](https://react-hot-toast.com/)
+
+---
+
+## 🚀 Інструкція з установки
+
+1. **Клонуйте репозиторій:**
+   ```bash
+   git clone [git@github.com:Eugene3671/hw-rent-car.git]
+   cd rental-car-app
+   ```
+2. **Встановіть залежності:**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Запустіть сервер розробки:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+ npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📖 Використання
 
-## Learn More
+1. **Фільтрація:** Скористайтеся панеллю фільтрів на головній сторінці. Оберіть марку або ціну з випадаючого списку. При введенні пробігу система автоматично додасть потрібні префікси.
+2. **Бронювання:** На сторінці деталей авто клікніть на поле "Booking date". Відкриється нативний календар для вибору дати. Після вибору дати фокус з поля знімається автоматично для зручності.
+3. **Навігація:** Натисніть "Search", щоб оновити результати, або "Reset" (якщо є активні фільтри), щоб повернутися до початкового списку.
+4. **Favorites:** Натискайте на іконку серця на картці авто, щоб додати його до обраного. Всі вибрані авто доступні на окремій сторінці.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👤 Автор
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Ім'я:** [Твоє Ім'я]
+- **Роль:** Frontend Developer
+- **GitHub:** [@your-username](https://github.com/your-username)
+- **LinkedIn:** [Твій LinkedIn Профіль]
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Ліцензія
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Проєкт розроблено в навчальних цілях. Усі права на контент належать автору.
