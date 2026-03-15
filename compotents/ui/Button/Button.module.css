@@ -1,12 +1,20 @@
 .Button {
   display: block;
-  max-width: 100%;
+  width: 100%;
   padding: 12px;
   border-radius: 12px;
   background-color: #3470ff;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   text-align: center;
   line-height: 125%;
   color: #fff;
+}
+.Button:hover,
+.Button:focus-visible {
+  background-color: #0b44cd;
+}
+.Button:active {
+  background-color: #0a36a3;
+  transform: scale(0.98);
 }

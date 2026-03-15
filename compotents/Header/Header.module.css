@@ -12,3 +12,12 @@
   display: flex;
   gap: 32px;
 }
+.navItem {
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+}
+.navItem:hover,
+.navItem:focus-visible {
+  color: #0b44cd;
+}

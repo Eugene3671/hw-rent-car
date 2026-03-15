@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import TanStackProvider from "@/compotents/TanStackProvider/TanStackProvider";
+import { Toaster } from "react-hot-toast";
 
 const manrope = Manrope({
   variable: "--font-manrope-sans",
@@ -11,6 +13,9 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Rent Car",
   description: "App where you can rent car",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -19,11 +24,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="./favicon.svg" />
-      </head>
-      <body className={`${manrope.variable}`}>{children}</body>
-    </html>
+    <TanStackProvider>
+      <html lang="en">
+        <body className={`${manrope.variable}`}>
+          {children}
+          <Toaster position="top-center" />
+        </body>
+      </html>
+    </TanStackProvider>
   );
 }

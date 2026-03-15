@@ -1,0 +1,128 @@
+.carDetailsContainer {
+  display: flex;
+  gap: 72px;
+  padding-top: 84px;
+  padding-bottom: 104px;
+}
+.carDetailsContainer .leftSide {
+  flex-basis: 640px;
+  flex-shrink: 0;
+}
+.carImageTumb {
+  position: relative;
+  width: 100%;
+  height: 512px;
+  margin-bottom: 40px;
+}
+.carImage {
+  object-fit: cover;
+  border-radius: 19px;
+}
+.formWrapper {
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  padding: 32px;
+}
+.formTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
+.formDescr {
+  color: #8d929a;
+  margin-bottom: 24px;
+}
+.bookForm input,
+.bookForm .input {
+  border-radius: 12px;
+  padding: 12px 20px;
+  background: #f7f7f7;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.bookForm textarea {
+  border-radius: 12px;
+  width: 100%;
+  padding: 12px 20px;
+  height: 88px;
+  background: #f7f7f7;
+  margin-bottom: 24px;
+  resize: none;
+}
+.bookForm input::placeholder,
+.bookForm textarea::placeholder {
+  color: #8d929a;
+}
+.formBtn {
+  max-width: 156px;
+  margin: 0 auto;
+}
+.titleContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.titleContainer > h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+}
+
+.titleContainer > p {
+  color: #8d929a;
+}
+.locationMileageWrapper {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.locationWrapper {
+  display: flex;
+  gap: 4px;
+}
+.rentalPrice {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: #3470ff;
+  margin-bottom: 32px;
+}
+.carDesription {
+  margin-bottom: 68px;
+}
+.carDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+}
+.listTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.listDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.listDetails li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* Це клас, який бібліотека дає всьому випадаючому вікну */
+.react-datepicker-popper {
+  position: absolute !important;
+  z-index: 9999 !important; /* Дуже високий пріоритет */
+}
+
+/* Переконайся, що сам календар не має статичного позиціонування */
+.react-datepicker {
+  position: relative;
+  display: block;
+}

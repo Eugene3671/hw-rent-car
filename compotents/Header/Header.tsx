@@ -13,11 +13,15 @@ export default function Header() {
           <ul className={css.navList}>
             <li>
               {" "}
-              <Link href={"/"}>Home</Link>
+              <Link href={"/"} className={css.navItem}>
+                Home
+              </Link>
             </li>
             <li>
               {" "}
-              <Link href={"/catalog"}>Catalog</Link>
+              <Link href={"/catalog"} className={css.navItem}>
+                Catalog
+              </Link>
             </li>
           </ul>
         </nav>

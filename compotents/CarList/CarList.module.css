@@ -1,0 +1,97 @@
+.carListContainer {
+  padding-top: 84px;
+  padding-bottom: 124px;
+}
+.formFilter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+.formFilter label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: #8d929a;
+  margin-bottom: 8px;
+}
+.formFilter select {
+  display: none;
+}
+.mileageWrapper {
+  display: flex;
+}
+.inputWrapper {
+  position: relative;
+  width: 160px;
+}
+.inputWrapper input {
+  width: 100%;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  line-height: 125%;
+  color: #101828;
+}
+.inputWrapper input::-webkit-outer-spin-button,
+.inputWrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputWrapper label {
+  font-weight: 500;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  font-size: 16px;
+  line-height: 125%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #101828;
+}
+.inputMileageLeft {
+  padding: 12px 12px 12px 65px;
+  border-right: 1px solid #dadde1;
+  border-radius: 12px 0 0 12px;
+}
+.inputMileageRight {
+  padding: 12px 12px 12px 45px;
+  border-radius: 0 12px 12px 0;
+}
+.formButton {
+  max-width: 156px;
+}
+.carList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 32px;
+  margin-bottom: 80px;
+}
+
+.titleNothing {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #6b6b6b;
+}
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+.carListContainer .btnLoadMore {
+  max-width: 156px;
+  border: 1px solid #3470ff;
+  background-color: transparent;
+
+  color: #101828;
+  margin: 0 auto;
+}
+.carListContainer .btnLoadMore:hover,
+.carListContainer .btnLoadMore:focus-visible {
+  border: 1px solid #0b44cd;
+  background-color: transparent;
+}
