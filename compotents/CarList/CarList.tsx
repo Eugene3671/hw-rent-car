@@ -91,30 +91,30 @@ export function CarList({ brands }: CarListProps) {
               <input
                 className={css.inputMileageLeft}
                 type="text"
-                placeholder="From"
-                value={
-                  filters.minMileage
-                    ? Number(filters.minMileage).toLocaleString("en-EN")
-                    : ""
-                }
-                onChange={(e) =>
-                  setFilters({ minMileage: e.target.value.replace(/\D/g, "") })
-                }
+                // Показуємо "From " завжди, навіть якщо цифр ще немає
+                value={`From ${filters.minMileage ? Number(filters.minMileage).toLocaleString("en-EN") : ""}`}
+                onChange={(e) => {
+                  // Видаляємо слово "From" і будь-які не-цифри
+                  const rawValue = e.target.value
+                    .replace("From", "")
+                    .replace(/\D/g, "");
+                  setFilters({ minMileage: rawValue });
+                }}
               />
             </div>
+
             <div className={css.inputWrapper}>
               <input
                 className={css.inputMileageRight}
                 type="text"
-                placeholder="To"
-                value={
-                  filters.maxMileage
-                    ? Number(filters.maxMileage).toLocaleString("en-EN")
-                    : ""
-                }
-                onChange={(e) =>
-                  setFilters({ maxMileage: e.target.value.replace(/\D/g, "") })
-                }
+                // Показуємо "To " завжди
+                value={`To ${filters.maxMileage ? Number(filters.maxMileage).toLocaleString("en-EN") : ""}`}
+                onChange={(e) => {
+                  const rawValue = e.target.value
+                    .replace("To", "")
+                    .replace(/\D/g, "");
+                  setFilters({ maxMileage: rawValue });
+                }}
               />
             </div>
           </div>

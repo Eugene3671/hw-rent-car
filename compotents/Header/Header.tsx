@@ -1,13 +1,12 @@
 import Link from "next/link";
 import css from "./Header.module.css";
+import Icon from "../ui/Icon/Icon";
 export default function Header() {
   return (
     <header className={css.header}>
       <div className={`container ${css.headerContainer}`}>
         <Link href={"/"}>
-          <svg width={"104"} height={"16"}>
-            <use href="/icons.svg/#icon-logo" />
-          </svg>
+          <Icon width={"104"} height={"16"} name="logo" />
         </Link>
         <nav>
           <ul className={css.navList}>

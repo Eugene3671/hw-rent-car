@@ -51,12 +51,15 @@
   color: #101828;
 }
 .inputMileageLeft {
-  padding: 12px 12px 12px 65px;
+  padding: 12px;
+  padding-left: 24px;
+
   border-right: 1px solid #dadde1;
   border-radius: 12px 0 0 12px;
 }
 .inputMileageRight {
-  padding: 12px 12px 12px 45px;
+  padding: 12px;
+  padding-left: 24px;
   border-radius: 0 12px 12px 0;
 }
 .formButton {

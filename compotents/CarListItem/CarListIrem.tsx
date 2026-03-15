@@ -4,6 +4,7 @@ import Button from "../ui/Button/Button";
 import { Car } from "@/types/car";
 import css from "./CarListItem.module.css";
 import { useCarStore } from "@/lib/store/carStore";
+import Icon from "../ui/Icon/Icon";
 export default function CarListItem({ car }: { car: Car }) {
   const favorites = useCarStore((state) => state.favorites);
   const toggleFavorite = useCarStore((state) => state.toggleFavorite);
@@ -31,13 +32,12 @@ export default function CarListItem({ car }: { car: Car }) {
             onClick={handleFavoriteClick}
             className={css.buttonSaveCar}
           >
-            <svg
+            <Icon
               width="16"
               height="15"
               className={isSaved ? css.iconHeartActive : css.iconHeart}
-            >
-              <use href="/icons.svg#icon-heart-active" />
-            </svg>
+              name="heart"
+            />
           </button>
         </div>
         <div className={css.carContent}>

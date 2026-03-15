@@ -1,4 +1,5 @@
 "use client";
+import Icon from "../ui/Icon/Icon";
 import css from "./DropDown.module.css";
 
 type CustomDropdownProps = {
@@ -33,9 +34,7 @@ export default function CustomDropdown({
         onClick={() => onToggle(!isOpen)}
       >
         {value || `Choose a ${name.toLowerCase()}`}
-        <svg width={"16"} height={"16"}>
-          <use href="/icons.svg#icon-chevron-down" />
-        </svg>
+        <Icon width={16} height={16} name="chevron-down" />
       </div>
 
       {isOpen && (

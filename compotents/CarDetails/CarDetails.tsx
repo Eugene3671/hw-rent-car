@@ -58,9 +58,35 @@ export function CarDetails({ car }: CarDetailsProps) {
                 required
               />
               <input
-                type="date"
+                type="text"
                 name="customer-data"
                 placeholder="Booking date"
+                className={css.input}
+                inputMode="none"
+                onKeyDown={(e) => {
+                  if (e.key !== "Tab") e.preventDefault();
+                }}
+                onFocus={(e) => {
+                  e.target.type = "date";
+                  try {
+                    e.target.showPicker();
+                  } catch (err) {}
+                }}
+                onChange={(e) => {
+                  if (e.target.value) {
+                    e.target.blur();
+                  }
+                }}
+                onBlur={(e) => {
+                  if (!e.target.value) e.target.type = "text";
+                }}
+                onClick={(e) => {
+                  if ("showPicker" in e.currentTarget) {
+                    try {
+                      e.currentTarget.showPicker();
+                    } catch (err) {}
+                  }
+                }}
               />
               <textarea
                 name="customer-text"
