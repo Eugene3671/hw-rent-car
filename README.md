@@ -17,6 +17,7 @@
 
 ## 🛠 Технологічний стек
 
+- **Library:** [React](https://react.dev/) 18+
 - **Framework:** [Next.js](https://nextjs.org/) 14+ (App Router)
 - **State Management:** [Zustand](https://zustand-demo.pmnd.rs/)
 - **Data Fetching:** [TanStack Query v5](https://tanstack.com/query/latest)
